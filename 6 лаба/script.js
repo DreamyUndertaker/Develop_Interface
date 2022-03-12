@@ -8,6 +8,6 @@ function UserResult(){
         alert('please, write your data')
     }
     else{
-        alert(name + " " + pass + " " + question)
+        alert(name + "\n" + pass + "\n" + question)
     }
 }

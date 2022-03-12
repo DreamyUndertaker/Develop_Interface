@@ -10,3 +10,7 @@ input{
 .output{
     font: 1rem 'Fira Sans', sans-serif;
 }
+.frogs img{
+    height: 10px;
+    width: 10px;
+}

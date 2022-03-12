@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <style>
+            body{
+                display: grid;
+                grid-template-areas: 
+                "consumption"
+                "pr"
+                "len"
+                "res"
+                "litres";
+                grid-row: 1fr 1fr 1fr 1fr 1fr;
+                grid-column: 1fr;
+                background-color: aquamarine;
+            }
+            .consumption, .pr, .len{
+                color: brown;
+                height: 20px;
+            }
+            .out{
+                color: red;
+            }
+            .consumption{
+                grid-area: consumption;
+            }
+            .len{
+                grid-area: len;
+            }
+            .pr{
+                grid-area: pr;
+            }
+            .res{
+                grid-area: res;
+            }
+            .litres{
+                grid-area: litres;
+            }
+        </style>
+        <script>
+            function main(){
+                let consumption = document.getElementById('cons').value
+                let price = document.getElementById('price').value
+                let length = document.getElementById('length').value
+                document.getElementById('result').innerHTML = `Price ${(length / consumption) * price} rub`
+                document.getElementById('litres').innerHTML = `Litres ${(consumption / 100) * length}`
+            }
+        </script>
+    </head>
+    <body>
+        <div class="consumption">
+            <input type="number" id="cons">
+            <span>consumption</span>
+        </div>
+        <div class="pr">
+            <input type="number" id="price">
+            <span>price</span><br>
+        </div>
+        <div class="len">
+            <input type="number" id="length">
+            <span>length</span>
+        </div>
+        <div class="button">
+            <button onclick="main()">Count</button>
+        </div>
+        <div class="out">
+            <span id="result" class="res"></span><br>
+            <span id="litres" class="litres"></span><br>
+        </div>
+    </body>
+</html>
