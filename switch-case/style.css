@@ -1,0 +1,75 @@
+body{
+    background-color:burlywood;
+}
+
+.input{
+    display: grid;
+    grid-template-areas: 
+    "first"
+    "second";
+
+    max-width: 100px;
+    grid-gap: 10px;
+}
+.first{
+    grid-area: frist;
+}
+.second{
+    grid-area: second;   
+    margin-bottom: 10px;
+}
+
+.buttons{
+    display: grid;
+    grid-template-areas: 
+    "plus minus exp"
+    "divide pow percent";
+
+    max-width: 300px;
+    grid-gap: 10px;
+    
+}
+.plus{
+    grid-area: plus;
+    max-width: 30px;
+    background-color: brown;
+    color: aliceblue;
+}
+.minus{
+    color: aliceblue;
+    background-color: brown;
+    grid-area: minus;
+    max-width: 30px;
+}
+.exp{
+    color: aliceblue;
+    background-color: brown;
+    grid-area: exp;
+    max-width: 30px;
+}
+.divide{
+    color: aliceblue;
+    background-color: brown;
+    grid-area: divide;
+    max-width: 30px;
+}
+.pow{
+    color: aliceblue;
+    background-color: brown;
+    grid-area: pow;
+    max-width: 30px;
+}
+.percent{
+    color: aliceblue;
+    background-color: brown;
+    grid-area: percent;
+    max-width: 30px;
+}
+.result{
+    color: aliceblue;
+    background-color: brown;
+}
+
+.output{
+    color: aliceblue;
+}
