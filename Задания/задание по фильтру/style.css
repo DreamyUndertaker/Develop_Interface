@@ -1,0 +1,6 @@
+img {
+    transition: transform 1s ease;
+}
+.rotate {
+    transform: rotate(180deg);
+}

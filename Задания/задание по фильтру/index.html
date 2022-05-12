@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function rotate() {
+            let img = document.getElementById("image");
+            img.style.transform = 'rotate(30deg)';
+        }
+        function mirroring() {
+            let img = document.getElementById('image');
+            img.style.transform = 'scale(-1, 1)';
+        }
+        function scale1() {
+            let img = document.getElementById('image');
+            img.style.width = '100px'
+            img.style.height = '100px'
+        }
+        function scale2() {
+            let img = document.getElementById('image');
+            img.style.width = '200px'
+            img.style.height = '200px'
+        }
+        function scale3() {
+            let img = document.getElementById('image');
+            img.style.width = '300px'
+            img.style.height = '300px'
+        }
+    </script>
+</head>
+<body>
+    <img src="https://cdn-icons-png.flaticon.com/512/3474/3474360.png" alt="" id="image">
+    <label>
+        <input type="radio" name="rotate" id="" onclick="rotate()">
+        Поворот
+    </label>
+    <label>
+        <input type="radio" name="mirror" id="" onclick="mirroring()">
+        Отражение 
+    </label>
+    <div class="scale">
+        <ul>
+            <li>
+                <label>
+                    <input type="radio" name="" id="" onclick="scale1()">
+                    100x100
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="radio" name="" id="" onclick="scale2()">
+                    200x200
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="radio" name="" id="" onclick="scale3()">
+                    300x300
+                </label>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
