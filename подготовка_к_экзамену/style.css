@@ -1,0 +1,158 @@
+body{
+    width: 1230px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header{
+    width: 1230px;
+    background-color: rgb(0, 9, 185);
+    display: grid;
+    grid-template-areas: "logo companyName menu search" ;
+    grid-gap: 20px;
+    height: 120px;
+}
+.logo img{
+    grid-area: logo;
+    height: 82.77px;
+    width: 99px;
+    padding-left: 20px;
+    padding-top: 25px;
+}
+
+.menu{
+    display: grid;
+    grid-template-areas: "news company companyInRussia journal contacts language";
+    grid-area: menu;
+    grid-gap: 10px;
+    padding-top: 30px;
+}
+.companyName{
+    color: aliceblue;
+    padding-top: 15px;
+    grid-area: companyName;
+}
+.news{
+    color: aliceblue;
+    grid-area: news;
+}
+.company{
+    color: aliceblue;
+    grid-area: company;
+}
+.companyInRussia{
+    color: aliceblue;
+    grid-area: companyInRussia;
+}
+.journal{
+    color: aliceblue;
+    grid-area: journal;
+}
+.contacts{
+    color: aliceblue;
+    grid-area: contacts;
+}
+.language{
+    color: aliceblue;
+    grid-area: language;
+}
+.search img{
+    padding-top: 55px;
+    grid-area: search;
+    height: 15px;
+    width: 15px;
+}
+
+.content{
+    display: grid;
+    grid-template-areas: "headerCards rightColumn";
+}
+.headerCards img{
+    height: 272px;
+    width: 271.5px;
+}
+.headerCards{
+    grid-area: headerCards;
+    padding-top: 20px;
+    display: grid;
+    grid-template-areas: "firstCard secondCard thirdCard rightColumn"
+    "forthCard fifthCard sixthCard rightColumn";
+}
+.firstCard{
+    grid-area: firstCard;
+}
+.secondCard{
+    grid-area: secondCard;
+}
+.thirdCard{
+    grid-area: thirdCard;
+}
+
+.rightColumn{
+    grid-area: rightColumn;
+    display: grid;
+    grid-template-areas: "firstCardColumn" "secondCardColumn" "thirdCardColumn";
+
+}
+.firstCardColumn img{
+    grid-area: firstCardColumn;
+    width: 230px;
+    height: 325px;
+}
+.secondCardColumn img{
+    grid-area: secondCardColumn;
+    width: 271.5px;
+    height: 265.16px;
+}
+.thirdCardColumn img{
+    grid-area: thirdCardColumn;
+    width: 271.5px;
+    height: 72.39px;
+}
+.fourthCardColumn img{
+    grid-area: fourthCardColumn;
+    width: 271.5px;
+    height: 72.39px;
+}
+
+.mainContent{
+    grid-area: mainContent;
+    display: grid;
+    grid-template-areas: "firstNews" "secondNews" "thirdNews";
+}
+.firstNews{
+    display: grid;
+    grid-area: firstNews;
+    grid-template-areas: "firstNewsImg FirstNewsText";
+}
+.firstNews img{
+    grid-area: firstNewsImg;
+    height: 412px;
+    width: 571.02px;
+}
+.firstNewsText{
+    grid-area: firstNewsText;
+}
+
+.footer{
+    background-color: rgb(0, 9, 185);
+    display: grid;
+    grid-template-areas: "logoFooter companyNameFooter contactsFooter";
+}
+.logoFooter img{
+    grid-area: logoFooter;
+    height: 82.77px;
+    width: 99px;
+    padding-left: 20px;
+    padding-top: 15px;
+}
+.companyNameFooter{
+    color: aliceblue;
+    padding-top: 10px;
+    grid-area: companyNameFooter;
+}
+.contactsFooter{
+    color: aliceblue;
+    padding-top: 15px;
+    grid-area: contactsFooter;
+}
